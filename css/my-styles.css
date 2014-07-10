@@ -1,0 +1,104 @@
+
+/* Typography
+================================= */
+
+.navbar-text1 {
+	font-weight: normal;
+	margin-left: 0;
+	padding-top: 7px;
+}
+.navbar-text2 {
+	font-weight: normal;
+	margin-right: 0;
+	padding-top: 7px;
+}
+
+/* Layout
+================================= */
+
+
+/* form
+================================= */
+
+.form-group {
+	margin: 0 auto;
+	max-width: 300px;
+	min-width: 150px;
+}
+
+/* Navbar
+================================= */
+.navbar {
+	min-height: 32px
+}
+
+
+/* Jumbotron
+================================= */
+
+.jumbotron {
+	padding: 50px 0 50px 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	align-content: center;
+}
+
+/* Input
+================================= */
+
+.guess {
+	height: 48px;
+	font-size: 18px;
+	line-height: normal;
+	text-align: center;
+}
+
+/* Buttons
+================================= */
+
+.btn {
+	height: 48px;
+	line-height: normal;
+	font-size: 24px;
+	text-align: center;
+}
+
+.btn-primary {
+	margin-top: 15px;
+}
+
+.btn-warning {
+	margin-top: 15px;
+	margin-right: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.btn-danger {
+	margin-top: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+
+}
+/* Media Queries
+================================= */
+
+/* Medium Devices */
+
+@media (max-width: 991px) {
+	.jumbotron {
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+	
+}
+
+/* Small Devices */
+
+@media (max-width: 767px) {
+	.jumbotron {
+		padding-top: 40px;
+		margin-bottom: 32px;
+	}
+
+}
