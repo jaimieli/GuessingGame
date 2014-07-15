@@ -1,5 +1,5 @@
 
-/* Typography
+/* Navbar
 ================================= */
 
 .navbar-text1 {
@@ -13,11 +13,24 @@
 	padding-top: 7px;
 }
 
-/* Layout
+.navbar {
+	min-height: 32px
+}
+
+/* Jumbotron Header
 ================================= */
 
+#response {
+	font-size: 24px;
+}
+.jumbotron {
+	padding: 0px 0 0px 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
 
-/* form
+/* Form
 ================================= */
 
 .form-group {
@@ -26,36 +39,12 @@
 	min-width: 150px;
 }
 
-/* Navbar
-================================= */
-.navbar {
-	min-height: 32px
-}
-
-
-/* Jumbotron
-================================= */
-
-.jumbotron {
-	padding: 50px 0 50px 0;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-align: center;
-	align-content: center;
-}
-
-/* Input
-================================= */
-
 .guess {
 	height: 48px;
 	font-size: 18px;
 	line-height: normal;
 	text-align: center;
 }
-
-/* Buttons
-================================= */
 
 .btn {
 	height: 48px;
@@ -79,26 +68,60 @@
 }
 
 
+/* Color Classes
+================================= */
+
+.correct {
+	background-color: #4DDB94;
 }
+
+.cold {
+	background-color: #85D6FF;
+}
+
+.fire {
+	background-color: #EE0000;
+}
+
+.warm {
+	background-color: #ff6c47;
+}
+
+.freezing {
+	background-color: #00F5FF;
+}
+
+.error {
+	background-color: red;
+}
+
+.white {
+	background-color: white;
+}
+
+
 /* Media Queries
 ================================= */
 
 /* Medium Devices */
 
 @media (max-width: 991px) {
-	.jumbotron {
-		padding-top: 60px;
-		padding-bottom: 20px;
+	#response {
+		font-size: 20px;
 	}
-	
+	.btn {
+		font-size: 20px;
+	}
 }
 
 /* Small Devices */
 
 @media (max-width: 767px) {
-	.jumbotron {
-		padding-top: 40px;
-		margin-bottom: 32px;
+	#response {
+		font-size: 16px;
+	}
+	.btn {
+		font-size: 16px;
 	}
 
 }

@@ -4,17 +4,17 @@
 		<title>Guessing Game</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link href="css/bootstrap.css" rel="stylesheet">
-    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
     	<link href="css/my-styles.css" rel="stylesheet" media="screen">
     	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     	<!--[if lt IE 9]>
 	      	<script src="../../assets/js/html5shiv.js"></script>
 	      	<script src="../../assets/js/respond.min.js"></script>
       	<![endif]-->
+      	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
 	</head>
 	<body>
 
-		<!-- Navbar-->
+	<!-- Navbar -->
 		<div class="navbar navbar-default fixed-top">
 			<div class="container">
 				<p class="navbar-text1 pull-left">Fullstack Academy Foundations</a>
@@ -22,29 +22,44 @@
 			</div>
 		</div><!-- End of Navbar -->
 
-		<!-- Jumbotron -->
-		<div class="jumbotron">
+	<!-- Jumbotron Header -->
+		<div class="jumbotron background">
 			<div class="container">
-				<h1>Guess the Number!</h1>
-				<p>You have three chances to guess the correct number.</p>
-				<div class="row">
-					<form class="form">
-						<div class="form-group">
-							<label class="sr-only">Your Guess</label>
-							<input class="form-control guess" id="guess" type="number" min="1" placeholder="Enter a real number 1-100">
-						</div>
-				</div>
-				<div class="row">
-						<button class="btn btn-primary" id="submit">Submit Your Guess</button>
-					</form>
-				</div>
-				<div class="row">
-					<button class="btn btn-warning" id="answer" href="#">Reveal the Answer</button>
-					<button class="btn btn-danger"id="newgame" href="#">Start a New Game</button>
-				</div>
+				<div>
+					<h1>
+						<span id="header">
+							Guess the Number!
+						</span>
+					</h1>
+					<p>
+						<div id ="response"></div>
+					</p>
+			    </div>
 			</div>
-		</div>
-	    <script src="http://code.jquery.com/jquery.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	</body>
+		</div><!-- End of Jumbotron Header -->
+
+	<!-- Form -->
+		<div class="container">
+			<div class="text-center">
+				<form class="form">
+					<div class="form-group">
+						<label class="sr-only">Your Guess</label>
+						<input class="form-control guess" id="guess" type="number" required="true" min="1" max="100" placeholder="Enter a real number 1-100" autocomplete="off"/>
+					</div>
+					<div class="row">
+						<button class="btn btn-primary" type="submit" id="submit">Submit Your Guess</button>
+					</div>
+					<div class="row">
+						<button class="btn btn-danger"id="answer">Reveal the Answer</button>
+						<button class="btn btn-warning" type="reset" id="newgame">Start a New Game</button>
+					</div>
+				</form>
+			</div>
+		</div><!-- End of Form -->
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/my-script.js"></script>
+
+</body>
 </html>
