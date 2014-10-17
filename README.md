@@ -1,4 +1,4 @@
-GuessingGame
+Guessing Game
 ============
 
 Game created using HTML/CSS/JS
